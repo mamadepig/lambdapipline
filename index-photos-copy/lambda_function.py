@@ -47,6 +47,7 @@ def lambda_handler(event, context):
                 'labels': labels
                 }
     #print(document)
+    print("pipeline")
     headers = { "Content-Type": "application/json" }
     r = requests.post(url, auth=('jiayuanguo', '201006004@aAa'), json=document, headers=headers)
     #print(r.text)
